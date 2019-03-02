@@ -9,7 +9,7 @@ class Bool2Bool {
   false -> true
   true -> true
   false -> false
-  f1 and f2 repesent these 4 arrows
+  f1 and f2 represent these 4 arrows
    */
   def f1(bool: Boolean) = !bool
 
