@@ -8,7 +8,8 @@ lazy val global = project
   .in(file("."))
   .settings(settings)
   .aggregate(
-    chapter2
+    chapter2,
+    chapter4
   )
 
 lazy val chapter2 = project
@@ -18,6 +19,12 @@ lazy val chapter2 = project
     libraryDependencies ++= commonDependencies
   )
 
+lazy val chapter4 = project
+  .settings(
+    name := "chapter-4",
+    settings,
+    libraryDependencies ++= commonDependencies
+  )
 // DEPENDENCIES
 
 lazy val dependencies =

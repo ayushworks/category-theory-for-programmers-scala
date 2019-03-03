@@ -1,6 +1,6 @@
 /**
-  * @author Ayush Mittal
-  */
+ * @author Ayush Mittal
+ */
 class Bool2Bool {
 
   /*
