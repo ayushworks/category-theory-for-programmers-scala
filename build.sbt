@@ -10,7 +10,8 @@ lazy val global = project
   .aggregate(
     chapter2,
     chapter4,
-    chapter5
+    chapter5,
+    chapter6
   )
 
 lazy val chapter2 = project
@@ -33,6 +34,13 @@ lazy val chapter5 = project
     settings,
     libraryDependencies ++= commonDependencies
   )
+
+lazy val chapter6 = project
+  .settings(
+    name := "chapter-6",
+    settings,
+    libraryDependencies ++= commonDependencies
+  )
 // DEPENDENCIES
 
 lazy val dependencies =
@@ -44,8 +52,8 @@ lazy val dependencies =
   }
 
 lazy val commonDependencies = Seq(
-  dependencies.scalatest  % "test",
-  dependencies.scalacheck % "test"
+  dependencies.scalatest,
+  dependencies.scalacheck
 )
 
 // SETTINGS
